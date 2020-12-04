@@ -336,7 +336,6 @@ public class PrincipalController implements Initializable {
             equacaoNormal();
 
         }
-        lblResultado.setText("O parafuso minimo recomendado é: " + this.ajusteMilimetrico() + " ou " + this.ajustePolegadas() + " Pol");
     }
 
     // Executa a equação normal
