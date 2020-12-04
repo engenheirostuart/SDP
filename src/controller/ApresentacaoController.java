@@ -16,7 +16,6 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import sdp.Binario;
 
-
 /**
  * FXML Controller class
  *
@@ -29,23 +28,23 @@ public class ApresentacaoController implements Initializable {
      */
     @FXML
     private Button btOk;
+
     @FXML
     private void iniciar(ActionEvent event) {
         System.out.println("Clicou OK!");
         Binario bi = new Binario();
-                try {
-                    bi.start(new Stage());
-                } catch (Exception ex) {
-                    Logger.getLogger(BemVindoController.class.getName())
-                            .log(Level.SEVERE, null, ex);
-                }
+        try {
+            bi.start(new Stage());
+        } catch (Exception ex) {
+            Logger.getLogger(BemVindoController.class.getName())
+                    .log(Level.SEVERE, null, ex);
+        }
         Stage stage = (Stage) btOk.getScene().getWindow();
         stage.close();
     }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    
     }
 }
-

@@ -10,13 +10,12 @@ package materiais;
  * @author stuar
  */
 public class FatorServico {
-    
+
     public double fator;
-    
-    
-    public FatorServico(double fator){
-        this.fator = fator;        
-                
+
+    public FatorServico(double fator) {
+        this.fator = fator;
+
     }
 
     public double getFator() {
@@ -29,8 +28,7 @@ public class FatorServico {
 
     @Override
     public String toString() {
-        return "Fator de Serviço: "+ fator;
+        return "Fator de Serviço: " + fator;
     }
-    
-}
 
+}
