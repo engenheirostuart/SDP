@@ -41,7 +41,7 @@ public class BemVindoController implements Initializable {
         fechar();
     }
     @FXML
-    private void fechar(ActionEvent event2) {
+    private void fechar(ActionEvent event) {
         System.out.println("Clicou Fechar!");
         Stage stage = (Stage) btFechar.getScene().getWindow();
             stage.close();
@@ -55,6 +55,8 @@ public class BemVindoController implements Initializable {
             if(e.getCode() == KeyCode.ENTER){
                 System.out.println("Etrou!");
                 Apresentacao bv = new Apresentacao();
+                fechar();
+                
                 try {
                     bv.start(new Stage());
                 } catch (Exception ex) {
@@ -63,9 +65,10 @@ public class BemVindoController implements Initializable {
             }
             if(e.getCode() == KeyCode.F10){
                 System.out.println("Fechou!");
-
+                fechar();
+                
             }
-            fechar();
+            
         });
         btFechar.setOnKeyPressed((KeyEvent e) -> {
             if(e.getCode() == KeyCode.ENTER){
